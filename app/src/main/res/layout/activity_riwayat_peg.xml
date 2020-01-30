@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--fromdata-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="id.masnadh.myapppeg.activities.DataActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimaryDark" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_jab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Riwayat Jabatan" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_pangkat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kenaikan Pangkat" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager2">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>
